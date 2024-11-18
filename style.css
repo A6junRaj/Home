@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1b6038;
+    background-image: url(./Image/NoicePattern.png);
+    color: white;
+    height: 100vh;
+    width: 100dvw;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: #192f20;
+    /* background-image: url(./Image/NoicePattern.png); */
+}
+.bar{
+    font-family: "Permanent Marker", cursive;
+    width: 29.5%;
+    margin-left: 10px;
+
+}
+.bar img{
+    width: 51px;
+}
+.search {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #e9effd; 
+    /* background-color: transparent; */
+}
+#search-btn{
+    z-index: 8;
+    /* margin: 0px 5px; */
+    padding: 5.5px 7px 5.5px 5.5px;
+    color: black;
+    font-size: small;
+    background-color: #e9effd;
+}
+.match-count{
+    z-index: 8;
+    font-size: 12px;
+    padding: 6px 5px;
+    color: black;
+    background-color: #e9effd;
+}
+.btn{
+    width: 35px;
+    z-index: 8;
+    background-color: #e9effd;
+    display: flex;
+    flex-flow: row;
+}
+.btn button{
+    background-color: transparent;
+    border: none;
+    width: 12px;
+    height: 27px;
+    outline: none;
+}
+input{
+    width: 90%;
+    padding: 5px 0px;
+    z-index: 8;
+    /* background: transparent; */
+    background-color: #e9effd;
+    border: none;
+    font-size: 15px;
+    /* margin-left: 3px; */
+    /* border-radius: 20px; */
+    outline: none;
+}
+.suggestions {
+    top: 15.5px;
+    padding-top: 27px;
+    /* width: 70.5%;
+    border-radius: 20px; */
+    width: 68.5%;
+    border-radius: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    color: black;
+    background-color: #e9effd;
+    /* background-color: blue; */
+    position: fixed;
+}
+.suggestion-item {
+    font-size: 15px;
+    padding: 3px 0px 3px 15px;
+    cursor: pointer;
+}
+.suggestion-item:hover {
+    /* background-color: #f0f0f0; */
+    background-color: cyan;
+}
+.highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* h1{
+    margin: 5px;
+} */
+main {
+    /* font-family: Arial, sans-serif; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+table {
+    width: 65%;
+    height: 80%;
+    border-collapse: collapse;
+    margin: 60px 0 15px 0;
+}
+
+td {
+    font-family: "Noto Serif Malayalam", serif;
+    padding: 12px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+th {
+    padding: 12px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    /* .search {
+        width: 63%;
+    }
+    input{
+        width: 89%;
+    }
+    .suggestions {
+        width: 55%;
+    } */
+    table {
+        width: 95%;
+    }
+}
+@media (max-width: 371px){
+    .suggestions {
+        top: 13.5px;
+        padding-top: 35px;
+        width: 67.5%;
+    }
+}
+
+
